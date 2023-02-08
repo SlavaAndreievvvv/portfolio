@@ -1,0 +1,13 @@
+@use 'utils';
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include utils.media('tablet') {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,30 @@
+@use 'utils';
+
+.description {
+  max-width: 620px;
+  margin-bottom: 24px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 28px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    @include utils.media('tablet') {
+      font-size: 100px;
+      margin-bottom: 70px;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: left;
+    color: #E0E2E9;
+    margin-bottom: 30px;
+    @include utils.media('tablet') {
+      font-size: 18px;
+    }
+  }
+}

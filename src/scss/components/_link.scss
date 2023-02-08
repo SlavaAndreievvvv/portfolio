@@ -1,0 +1,16 @@
+@use 'utils';
+
+.link {
+  cursor: pointer;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: #F4EEEA;
+    transition: all .3s ease;
+
+    &:hover {
+      fill: #0063CE;
+    }
+  }
+}
