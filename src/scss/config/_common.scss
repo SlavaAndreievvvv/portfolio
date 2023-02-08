@@ -5,6 +5,9 @@
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 html {
@@ -14,11 +17,15 @@ html {
 
 body {
   font-family: v.$primary-font;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
   width: 100%;
-  max-width: calc(800px + v.$mobile-container-padding-x);
+  max-width: calc(1366px + v.$mobile-container-padding-x);
   padding: {
     left: v.$mobile-container-padding-x;
     right: v.$mobile-container-padding-x;

@@ -1,0 +1,19 @@
+@use 'utils';
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 60px;
+
+  
+  &__link {
+    margin-right: 22px;
+  }
+  &__link--mr {
+    margin-right: 0;
+  }
+}
