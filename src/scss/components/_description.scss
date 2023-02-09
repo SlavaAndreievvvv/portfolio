@@ -1,8 +1,8 @@
 @use 'utils';
 
 .description {
-  max-width: 620px;
-  margin-bottom: 24px;
+  max-width: 636px;
+  margin-bottom: 16px;
 
   &__title {
     font-weight: 500;
@@ -13,7 +13,7 @@
     margin-bottom: 30px;
     @include utils.media('tablet') {
       font-size: 100px;
-      margin-bottom: 70px;
+      margin-bottom: 50px;
     }
   }
   &__text {
@@ -25,6 +25,18 @@
     margin-bottom: 30px;
     @include utils.media('tablet') {
       font-size: 18px;
+    }
+  }
+  &__text > a {
+    color: #0077E2;
+    transition: all .2s ease;
+    padding: 1px;
+    &:hover span {
+      color: #0b3ee7d7;
+    }
+    &:focus {
+      outline: 1px solid white;
+      border-radius: 8px;
     }
   }
 }
