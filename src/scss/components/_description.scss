@@ -1,7 +1,7 @@
 @use 'utils';
 
 .description {
-  max-width: 636px;
+  max-width: 815px;
   margin-bottom: 16px;
 
   &__title {
@@ -13,7 +13,7 @@
     margin-bottom: 30px;
     @include utils.media('tablet') {
       font-size: 100px;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
     }
   }
   &__text {
