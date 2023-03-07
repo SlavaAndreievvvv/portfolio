@@ -1,4 +1,4 @@
-@use 'utils';
+@use "utils";
 
 .description {
   max-width: 815px;
@@ -9,11 +9,11 @@
     font-size: 40px;
     line-height: 28px;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 30px;
-    @include utils.media('tablet') {
-      font-size: 100px;
-      margin-bottom: 70px;
+    @include utils.media("tablet") {
+      margin-bottom: 54px;
+      font-size: 88px;
     }
   }
   &__text {
@@ -21,15 +21,15 @@
     font-size: 20px;
     line-height: 160%;
     text-align: left;
-    color: #E0E2E9;
+    color: #e0e2e9;
     margin-bottom: 30px;
-    @include utils.media('tablet') {
+    @include utils.media("tablet") {
       font-size: 18px;
     }
   }
   &__text > a {
-    color: #0077E2;
-    transition: all .2s ease;
+    color: #0077e2;
+    transition: all 0.2s ease;
     padding: 1px;
     &:hover span {
       color: #0b3ee7d7;
