@@ -46,7 +46,7 @@
   }
 }
 
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
   display: $display;
   position: $pos;
@@ -61,14 +61,15 @@
 }
 
 $breakpoints: (
-  'phone': 400px,
-  'phone-wide': 480px,
-  'tablet-small': 640px,
-  'tablet': 768px,
-  'tablet-medium': 860px,
-  'tablet-wide': 1024px,
-  'desktop': 1248px,
-  'desktop-wide': 1440px,
+  "phone": 400px,
+  "phone-wide": 480px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-medium": 860px,
+  "tablet-wide": 1024px,
+  "desktop": 1248px,
+  "desktop-wide": 1440px,
+  "tv": 2100px,
 );
 
 @mixin media($width, $type: min) {

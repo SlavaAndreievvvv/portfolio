@@ -1,4 +1,9 @@
-@use 'variables' as v;
+@use "variables" as v;
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
 
 *,
 *:after,
@@ -13,14 +18,18 @@
 html {
   font-size: v.$base-font-size;
   background-color: v.$color-bg;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body {
   font-family: v.$primary-font;
   min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .container {

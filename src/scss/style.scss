@@ -1,11 +1,12 @@
-@use './config/normalize';
-@use './config/reset';
-@use './config/common';
+@use "./config/normalize";
+@use "./config/reset";
+@use "./config/common";
 
 // Components
-@use './components/link';
-@use './components/card';
-@use './components/header';
-@use './components/main';
-@use './components/description';
-@use './components/projects';
+@use "./components/slider";
+@use "./components/link";
+@use "./components/card";
+@use "./components/header";
+@use "./components/main";
+@use "./components/description";
+@use "./components/projects";

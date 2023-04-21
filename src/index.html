@@ -75,7 +75,7 @@
         </svg>
       </a>
     </header>
-    <main class="main">
+    <main class="main container">
       <div class="description">
         <h1 class="description__title">Welcome</h1>
         <p class="description__text">
@@ -89,10 +89,10 @@
           You can evaluate my work by clicking on the links.
         </p>
       </div>
-      <div class="projects">
+      <div class="projects slider">
         <a
           href="https://cryptoriance.netlify.app/"
-          class="card main__card"
+          class="card main__card slider__slide"
           data-tilt
           data-tilt-glare
           data-tilt-max-glare="0.5"
@@ -116,7 +116,7 @@
         </a>
         <a
           href="https://page-linear.netlify.app/"
-          class="card main__card"
+          class="card main__card slider__slide"
           data-tilt
           data-tilt-glare
           data-tilt-max-glare="0.5"
@@ -141,7 +141,7 @@
         </a>
         <a
           href="https://react-todo-app-l1st.netlify.app/"
-          class="card main__card"
+          class="card main__card slider__slide"
           data-tilt
           data-tilt-glare
           data-tilt-max-glare="0.5"
@@ -161,6 +161,30 @@
               localstorage. Styled with css-modules and library clsx. Used for
               type checking library PropTypes. Used the library framer-motion to
               smoothly add and delete tasks
+            </p>
+          </div>
+          <button class="card__button">Show More</button>
+        </a>
+        <a
+          href="https://recipe-app-list.netlify.app/"
+          class="card main__card slider__slide--end"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+        >
+          <div class="card__image">
+            <img
+              class="card__icon"
+              src="/src/assets/images/recipes.svg"
+              alt="crypto"
+            />
+          </div>
+          <div class="card__content">
+            <h2 class="card__title">Recipe App</h2>
+            <p class="card__description">
+              Recipe app. Used bundler Vite, React, used to switch
+              react-router-dom, recipe API. Styled with css-modules and library
+              clsx. Used for type checking library PropTypes.
             </p>
           </div>
           <button class="card__button">Show More</button>

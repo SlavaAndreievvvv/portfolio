@@ -1,0 +1,37 @@
+@use "utils";
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 16px;
+  @include utils.media("tablet") {
+    padding-left: calc(50vw - 590px);
+  }
+  @include utils.media("tv") {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  &__slide {
+    scroll-snap-align: center;
+    scroll-margin-left: 64px;
+    flex: 0 0 500px;
+  }
+  &__slide--end {
+    scroll-snap-align: end;
+    scroll-margin-right: 64px;
+    flex: 0 0 500px;
+  }
+}
